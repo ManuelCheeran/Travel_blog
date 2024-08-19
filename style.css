@@ -1,0 +1,159 @@
+/* body  */
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "New Amsterdam", sans-serif;
+}
+
+/* header  */
+header{
+  background-color: black;
+  height: 70px;
+  font-size: large;
+  position: sticky;
+  top:0px;
+  z-index: 1;
+}
+nav{
+  padding: 20px;
+}
+nav a{
+  text-decoration: none;
+  color: aliceblue;
+  transition: 500ms transform;
+  
+}
+nav a:hover{
+  color: orange;
+  transform: translateY(-2px);
+}
+.active{
+  color: orange;
+}
+
+
+
+/* banner */
+.banner{
+  height: 600px;
+  position: relative;
+  font-size: xx-large;
+}
+.carousel button{
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  margin: auto;
+  color: black;
+  background-color: transparent;
+  /* border: 2px solid; */
+}
+#start_button{
+  border: 2px solid;
+}
+.carousel button:hover{
+  background-color: black;
+}
+.carousel-control-next-icon{
+  margin: auto;
+}
+.carousel-control-prev-icon{
+  margin: auto;
+}
+
+/* options */
+.options{
+  flex-wrap: wrap;
+}
+.options .card{
+  border: 0cap;
+  transition: ease 700ms;
+  margin-top: 100px;
+}
+.options .card:hover{
+  transform: scale(1.1);
+  color: orange;
+}
+.options .card img{
+  border-radius: 5px;
+}
+.options .card a{
+  text-decoration: none;
+  color: black;
+}
+
+/* about_me */
+.about_me {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  gap: 20px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.about_me_1, .about_me_2 {
+  flex: 1 1;
+  min-width: 300px;
+}
+
+.about_me_1 {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  transition: 1s ease;
+}
+.about_me_1 img{
+  border-radius: 10px;
+}
+.about_me_1:hover {
+  transform: translateX(-10px);
+}
+
+.about_me_2 {
+  font-size: x-large;
+}
+
+.about_me_2 button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: .5s ease;
+}
+
+.about_me_2 button:hover {
+  color: white;
+  background-color: orange;
+  transform: translateY(-3px);
+}
+
+/* .latest_adventure  */
+.latest_adventure{
+  padding: 20px;
+  font-size: large;
+}
+.adventure{
+  margin-top: 80px;
+}
+.adventure_gallery{
+  flex-wrap: wrap;
+}
+.adventure_gallery img{
+  border-radius: 10px;
+}
+.adventure_gallery:hover img:not(:hover){
+  filter: blur(3px);
+}
+
+/* footer  */
+footer{
+  justify-content: center;
+}
+.footer_block_content p{ 
+  margin: 0px 15px;
+}
+.footer_block_content a{
+  text-decoration: none;
+}
